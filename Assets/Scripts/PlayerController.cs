@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed = 10f;
     public float xbound = 10;
 
+    public GameObject projectilePrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+
         if (transform.position.x < -10)
         {
             transform.position = new Vector3(-xbound, transform.position.y, transform.position.z);
