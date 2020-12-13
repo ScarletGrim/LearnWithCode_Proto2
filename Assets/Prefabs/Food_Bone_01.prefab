@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 24547925}
   - component: {fileID: 5781697114587684454}
   - component: {fileID: 6966458419018596781}
+  - component: {fileID: 114495291191582138}
   m_Layer: 0
   m_Name: Food_Bone_01
   m_TagString: Untagged
@@ -117,8 +118,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6528887, y: 0.12128265, z: 0.29866803}
-  m_Center: {x: 0, y: 0.060641326, z: 0}
+  m_Size: {x: 0.75, y: 0.25, z: 0.35}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6966458419018596781
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -135,3 +136,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114495291191582138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6433697475272823163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7928d2215fff334b85b04b46b1e1c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
