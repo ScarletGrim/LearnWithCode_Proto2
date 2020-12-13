@@ -25,12 +25,12 @@ public class PlayerController : MonoBehaviour
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
 
-        if (transform.position.x < -10)
+        if (transform.position.x < -xbound)
         {
             transform.position = new Vector3(-xbound, transform.position.y, transform.position.z);
         }
         
-        if (transform.position.x > 10)
+        if (transform.position.x > xbound)
         {
             transform.position = new Vector3(xbound, transform.position.y, transform.position.z);
         }
